@@ -6,6 +6,9 @@ dependencies:
   - numba
   - jupyterlab
   - pip=22
+  - matplotlib
+  - scipy
+  - astropy
   - pip:
     - cupy
 
