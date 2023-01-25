@@ -1,0 +1,14 @@
+name: gpu-py
+channels:
+  - defaults
+  - https://ftp.osuosl.org/pub/open-ce/current/
+dependencies:
+  - numba=0.56
+  - jupyterlab=3.5
+  - pip=22
+  - matplotlib=3.6
+  - scipy=1.9
+  - astropy=5.1
+  - pip:
+    - cupy==11.5
+
