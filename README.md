@@ -1,6 +1,35 @@
-# GPU Programming
+# GPU Programming (N8 CIR Fork)
 
-Work in progress on developing a lesson on programming Graphics Processing Units (GPUs).
+This is an adapted version of the [Carpentries Incubator GPU Programming workshop](https://github.com/carpentries-incubator/lesson-gpu-programming). 
+The course has been adapted for an [N8 CIR Training workshop](https://n8cir.org.uk/events/) with minor adjustments.
+
+## Remit
+
+This adapted fork is for workshops set to be delivered in February and April 2023. 
+There will be limited maintainence of this fork after that time period and we recommend using the original Carpentries Incubator lesson for more up-to-date materials.
+
+## Running this code on Bede
+
+This repository and associated code will run on Bede by taking the following steps:
+
+1. Install [miniconda](https://docs.conda.io/en/latest/miniconda.html) to access the `conda` package manager by following the [Bede documentation](https://bede-documentation.readthedocs.io/en/latest/software/applications/conda.html#installing-miniconda)
+2. Install mamba in your base environment
+  ```bash
+  $ conda activate base
+  (base) $ conda install -c conda-forge mamba
+  ```
+3. Create the `gpu-py` environment using the provided environment.yml
+  ```bash
+  (base) $ cd lesson-gpu-programming
+  (base) $ mamba env create -f environment.yml
+  (base) $ conda activate gpu-py
+  ```
+4. Load the cuda module
+  ```bash
+  (gpu-py) $ module add cuda
+  ```
+5. You can then run the code snippets in this tutorial via JupyterLab (will require additional configuration) or the IPython terminal (this is **not** recommended for production code)
+
 
 ## Contributing
 
